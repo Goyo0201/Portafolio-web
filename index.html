@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio John Goyeneche</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- MENÚ RESPONSIVE -->
+  <nav class="bg-gray-800 fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-white">John Goyeneche</h1>
+      <button id="menu-btn" class="md:hidden text-white">
+        ☰
+      </button>
+      <ul id="menu" class="hidden md:flex gap-6 text-white">
+        <li><a href="#inicio" class="hover:text-purple-400">Inicio</a></li>
+        <li><a href="#sobre-mi" class="hover:text-purple-400">Sobre mí</a></li>
+        <li><a href="#herramientas" class="hover:text-purple-400">Herramientas</a></li>
+        <li><a href="#proyectos" class="hover:text-purple-400">Proyectos</a></li>
+        <li><a href="#contacto" class="hover:text-purple-400">Contacto</a></li>
+      </ul>
+    </div>
+    <!-- Menú mobile -->
+    <ul id="menu-mobile" class="md:hidden hidden flex-col gap-2 px-4 pb-4 text-white bg-gray-700">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#herramientas">Herramientas</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+ <!-- INICIO -->
+<section id="inicio" class="h-screen flex items-center justify-center bg-gradient-to-br from-purple-700 to-indigo-900 pt-16 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-y-10 md:gap-x-24 text-center md:text-left">
+
+    <!-- Columna izquierda: Texto + redes -->
+    <div class="flex flex-col items-center md:items-start">
+      <h2 class="text-4xl md:text-6xl font-bold text-white">John Goyeneche</h2>
+      <p class="text-lg md:text-2xl text-gray-200 mt-4 typewriter">Ingeniero de Sistemas | Desarrollador web</p>
+
+      <!-- Redes sociales -->
+      <div class="flex justify-center md:justify-start gap-4 mt-6">
+        <a href="https://github.com/Goyo0201" target="_blank"
+          class="bg-gray-900 text-white rounded-full p-3 hover:bg-indigo-600 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/jhon.goyeneche.0201" target="_blank"
+          class="bg-gray-900 text-white rounded-full p-3 hover:bg-indigo-600 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/goyoo_0201/" target="_blank"
+          class="bg-gray-900 text-white rounded-full p-3 hover:bg-indigo-600 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@jhongoyeneche1803/videos" target="_blank"
+          class="bg-gray-900 text-white rounded-full p-3 hover:bg-indigo-600 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jhon-goyeneche-7b96a1279/" target="_blank"
+          class="bg-gray-900 text-white rounded-full p-3 hover:bg-indigo-600 transition">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna derecha: Foto + botón -->
+    <div class="flex flex-col items-center mt-10 md:mt-0">
+      <!-- Foto -->
+      <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden group transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-400 to-indigo-500 animate-spin-slow blur-lg scale-105"></div>
+        <img src="img/foto.jpg" alt="Jhon Edilberto"
+          class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-xl">
+      </div>
+
+      <!-- Botón descargar CV -->
+      <a href="cv/CV JOHN GOYENECHE.pdf" download
+        class="mt-6 bg-white text-indigo-700 font-semibold px-4 py-2 text-sm rounded-xl shadow-md hover:bg-indigo-700 hover:text-white transition-all duration-300 rotate-0 hover:rotate-0">
+        Descargar mi CV
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="py-20 px-6 bg-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-purple-400 mb-4">Sobre mí</h2>
+      <p class="text-gray-300 text-lg">
+        Soy un apasionado de la tecnología con experiencia en desarrollo web, software de escritorio y soluciones a medida. Me encanta transformar ideas en herramientas útiles y funcionales.
+      </p>
+    </div>
+  </section>
+
+<!-- SECCIÓN DE HERRAMIENTAS -->
+<section id="herramientas" class="py-16 bg-gradient-to-b from-slate-800 to-slate-900 text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-teal-400 mb-8 text-center">Herramientas que domino</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Tarjeta -->
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_python.svg" alt="Python" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">Python</h3>
+        <p class="text-sm mt-2">Lenguaje versátil para desarrollo web, scripts y automatización.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icocno_javascript.svg" alt="JavaScript" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">JavaScript</h3>
+        <p class="text-sm mt-2">Lenguaje esencial para interactividad en la web.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_html.svg" alt="HTML" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">HTML</h3>
+        <p class="text-sm mt-2">Estructura fundamental para páginas web.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_css.svg" alt="CSS" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">CSS</h3>
+        <p class="text-sm mt-2">Estiliza sitios web con diseños atractivos y modernos.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_mysql.svg" alt="MySQL" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">MySQL</h3>
+        <p class="text-sm mt-2">Gestor de bases de datos relacional para aplicaciones dinámicas.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icocno_vscode.svg" alt="Visual Studio Code" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">Visual Studio Code</h3>
+        <p class="text-sm mt-2">Editor de código ligero, potente y extensible.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_github.svg" alt="GitHub" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">GitHub</h3>
+        <p class="text-sm mt-2">Control de versiones y colaboración en proyectos.</p>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow-lg p-6 hover:scale-105 transition">
+        <img src="img/icons/icono_postman.svg" alt="Postman" class="w-12 h-12 mx-auto mb-4">
+        <h3 class="font-bold text-lg">Postman</h3>
+        <p class="text-sm mt-2">Prueba y documentación de APIs de manera eficiente.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PORTAFOLIO -->
+<section id="proyectos" class="py-16 bg-gray-800 text-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-teal-400 mb-8 text-center">Proyectos</h2>
+
+    <!-- Grid de proyectos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Proyecto -->
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
+        <img src="img/img_proyectos/gym.jpg" alt="Punto de Venta" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://github.com/Goyo0201/SCG_Software" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class=" text-2xl text-white text-center font-semibold mb-2">Pagina Web Gimnasio</h3>
+        <img src="img/img_proyectos/pagina_gym2.png" alt="To-Do App" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://goyo0201.github.io/Proyecto_Frontend/" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+          <a href="https://github.com/Goyo0201/Proyecto_Frontend?tab=readme-ov-file" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
+        <img src="img/encriptador.png" alt="Encriptador de Mensajes" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://link-a-tu-encriptador.com" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+          <a href="https://github.com/tuusuario/encriptador" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
+        </div>
+      </div>
+
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
+        <img src="img/img_proyectos/gym.jpg" alt="Punto de Venta" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://github.com/Goyo0201/SCG_Software" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class=" text-2xl text-white text-center font-semibold mb-2">Pagina Web Gimnasio</h3>
+        <img src="img/img_proyectos/pagina_gym2.png" alt="To-Do App" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://goyo0201.github.io/Proyecto_Frontend/" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+          <a href="https://github.com/Goyo0201/Proyecto_Frontend?tab=readme-ov-file" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
+        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
+        <img src="img/encriptador.png" alt="Encriptador de Mensajes" class="w-full h-56 object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
+          <a href="https://link-a-tu-encriptador.com" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
+          <a href="https://github.com/tuusuario/encriptador" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-pink-400 mb-4">Contacto</h2>
+      <p class="text-gray-300 mb-6">¿Tienes un proyecto o idea? ¡Hablemos!</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Tu nombre" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
+        <input type="email" placeholder="Tu correo" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
+        <textarea placeholder="Tu mensaje" rows="4" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white"></textarea>
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded text-white font-bold">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
