@@ -202,33 +202,6 @@
         </div>
       </div>
 
-      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
-        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
-        <img src="img/img_proyectos/gym.jpg" alt="Punto de Venta" class="w-full h-56 object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
-          <a href="https://github.com/Goyo0201/SCG_Software" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
-        </div>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
-        <h3 class=" text-2xl text-white text-center font-semibold mb-2">Pagina Web Gimnasio</h3>
-        <img src="img/img_proyectos/pagina_gym2.png" alt="To-Do App" class="w-full h-56 object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
-          <a href="https://goyo0201.github.io/Proyecto_Frontend/" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
-          <a href="https://github.com/Goyo0201/Proyecto_Frontend?tab=readme-ov-file" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
-        </div>
-      </div>
-
-      <!-- Proyecto 3 -->
-      <div class=" bg-gray-700 relative group overflow-hidden rounded-xl shadow-lg">
-        <h3 class="text-2xl text-white text-center font-semibold mb-2">Sistema para Gimnasio</h3>
-        <img src="img/encriptador.png" alt="Encriptador de Mensajes" class="w-full h-56 object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center gap-4">
-          <a href="https://link-a-tu-encriptador.com" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded-full font-semibold hover:bg-blue-100 transition">Ver Proyecto</a>
-          <a href="https://github.com/tuusuario/encriptador" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Ver Código</a>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -240,14 +213,22 @@
     <div class="max-w-xl mx-auto text-center">
       <h2 class="text-4xl font-bold text-purple-400 mb-4">Contacto</h2>
       <p class="text-gray-300 mb-6">¿Tienes un proyecto o idea? ¡Hablemos!</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="Tu nombre" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
-        <input type="email" placeholder="Tu correo" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
-        <textarea placeholder="Tu mensaje" rows="4" class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white"></textarea>
+      
+      <form action="https://formsubmit.co/jhongoyeneche0201@gmail.com" method="POST" class="space-y-4">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="/">
+        <input type="hidden" name="_template" value="table">
+        
+        <input type="text" name="name" placeholder="Tu nombre" required class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
+        <input type="email" name="email" placeholder="Tu correo" required class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white">
+        <textarea name="message" placeholder="Tu mensaje" rows="4" required class="w-full p-3 bg-gray-800 border border-gray-700 rounded text-white"></textarea>
+        
         <button type="submit" class="bg-purple-500 hover:bg-purple-400 px-6 py-3 rounded text-white font-bold">Enviar</button>
       </form>
     </div>
   </section>
+
 
 
   <!-- FOOTER -->
